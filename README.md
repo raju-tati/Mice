@@ -1,2 +1,2 @@
 # Mice
-Mice programming language
+Mice programming language written in mice.
