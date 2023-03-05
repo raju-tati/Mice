@@ -1,2 +1,2 @@
 # Mice
-Mice programming language written in mice.
+Mice, a programming language written in mice.
