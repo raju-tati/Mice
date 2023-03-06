@@ -1,11 +1,3 @@
-sub main() {
-    my program = 
-        "sub main() {
-            my sum = 20;
-            print(sum);
-        }";
-}
-
 sub makeChars(program) {
     my chars = stringSplit("", program);
     hash{"chars"} = chars;
