@@ -1,0 +1,7 @@
+sub main() {
+    my program = 
+        "sub main() {
+            my sum = 20;
+            print(sum);
+        }";
+}
