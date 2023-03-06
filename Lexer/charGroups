@@ -1,1 +1,55 @@
+sub isSpaceOrNewLine(char) {
+    my spaceNewLline = [" ", "\n", "\t", "\r"];
+    if(arrayElement(spaceNewLline, char)) {
+        return 1;
+    } else {
+        return 0;
+    }
+}
 
+sub isDigit(char) {
+    my digits = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+    arrayEach (digits) => (digit, index) {
+        if(char eq digit) {
+            return 1;
+        } else {
+            return 0;
+        }
+    }
+}
+
+sub isAlpha(char) {
+    my alpha = [];
+
+    forEach ('a' ... 'z') => (element) {
+        arrayPush(alpha, element);
+    }
+    forEach ('A' ... 'Z') => (element) {
+        arrayPush(alpha, element);
+    }
+
+    if(arrayElement(alpha, char)) {
+        return 1;
+    } else {
+        return 0;
+    }
+}
+
+sub isQuote(char) {
+    if( char eq '"' ) {
+        return 1;
+    } else {
+        return 0;
+    }
+}
+
+sub isSpecialCharacter(char) {
+    my specialCharachters = [ "{", "}", "[", "]", ",", ":" ];
+
+    if ( arrayELement(specialCharachters, char) ) {
+        return 1;
+    }
+    else {
+        return 0;
+    }
+}
