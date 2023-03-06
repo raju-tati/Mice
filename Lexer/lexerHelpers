@@ -1,3 +1,29 @@
 sub main() {
-  print("Hello from main", "\n");
+    my program = 
+        "sub main() {
+            my sum = 20;
+            print(sum);
+        }";
+}
+
+sub makeChars(program) {
+    my chars = stringSplit("", program);
+    hash{"chars"} = chars;
+    hash{"charsLength"} = arrayLength(chars);
+}
+
+sub programLength() {
+    return hash{"charsLength"};
+}
+
+sub nextChar() {
+    my chars = hash{"chars"};
+    return chars[0];
+}
+
+sub putChar(char) {
+    my chars = hash{"chars"};
+    arrayUnshift(chars, char);
+    hash{"chars"} = chars;
+    hash{"charsLength"} = arrayLength(chars);
 }
