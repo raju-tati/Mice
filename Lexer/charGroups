@@ -21,10 +21,10 @@ sub isDigit(char) {
 sub isAlpha(char) {
     my alpha = [];
 
-    forEach ('a' ... 'z') => (element) {
+    forEach ("a" .. "z") => (element) {
         arrayPush(alpha, element);
     }
-    forEach ('A' ... 'Z') => (element) {
+    forEach ("A" .. "Z") => (element) {
         arrayPush(alpha, element);
     }
 
